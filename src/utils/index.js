@@ -44,11 +44,11 @@ if (datacountry){
     }
     return objresponse
 }
-let peru = await Country.findByPk('PER')
-let responseperu = await peru.getActivities()
-console.log('*********respuestas peru...')
-console.log(peru)
-console.log(responseperu)
+// let peru = await Country.findByPk('PER')
+// let responseperu = await peru.getActivities()
+// console.log('*********respuestas peru...')
+// console.log(peru)
+// console.log(responseperu)
 const responsecountry = {
     status: 'accepted',
     message: 'Country information sent',
