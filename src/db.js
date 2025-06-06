@@ -13,7 +13,7 @@ const ActivityModel = require("./models/Activity");
 const CountryModel = require("./models/Country");
 //postgresql://postgres:ILZmORhJtJRgjuyawQMmXcTfMroMkxkT@postgres.railway.internal:5432/railway
 //`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/countries`
-const sequelize = new Sequelize(DB_HOST, {
+const sequelize = new Sequelize("postgresql://postgres:ILZmORhJtJRgjuyawQMmXcTfMroMkxkT@postgres.railway.internal:5432/railway", {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 });
