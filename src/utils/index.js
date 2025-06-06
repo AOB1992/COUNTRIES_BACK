@@ -92,9 +92,9 @@ const getApiCountry = async (data) => {
             }
         }
         let finalcountry = {
-            id: brutdata.cca3,
+            id: brutdata.cca2,
                   name: brutdata.name.common,
-                  flagpic: brutdata.flags[0],
+                  flagpic: brutdata.flags.png,
                   continent: brutdata.continents[0],
                   capital: responsecapital,
                   subregion: brutdata.subregion,
@@ -130,9 +130,10 @@ const getApiCountries = async () => {
             }
 //return data
             return {
-                id: country.cca3,
+                id: country.cca2,
                   name: country.name.common,
-                  flagpic: country.flags[0],
+                //   flagpic: country.flags[0],
+                flagpic: country.flags.png,
                   continent: country.continents[0],
                   capital: responsecapital,
                   subregion: country.subregion,
