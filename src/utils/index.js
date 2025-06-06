@@ -1,5 +1,6 @@
 const axios = require("axios");
-const api = 'https://restcountries.com/v3/all'
+const apiorigial = 'https://restcountries.com/v3/all'
+const api = 'https://restcountries.com/v3.1/all?fields=name,flags,continents,subregion,area,population,capital'
 const api2 = 'https://restcountries.com/v3.1/name/australia'
 const apiname = 'https://restcountries.com/v3.1/name/'
 const { Activity, Country} = require("../db");
